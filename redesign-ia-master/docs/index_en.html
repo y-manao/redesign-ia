@@ -1,0 +1,100 @@
+<!-- index_en.html -->
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <title>Tokyo Metropolitan University Department of Industrial Art</title>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.css' rel='stylesheet' />
+    <script src="js/index.js"></script>
+  </head>
+
+
+
+  <body>
+
+    <header>
+        <div class = "lang">
+        <a  rel = "alternate" href="index.html"><h4 class ="header">JP</h4></a>
+        <h4 class ="header">EN</h4>
+        </div>
+        <div class = "department_name">
+            <h1>Graduation Exhibition Link</h1>
+          </div>
+    </header>
+
+    <main>
+      <section class="contents">
+        <section class="links">
+          <section class="link">
+            <section class="left"><img src="img/iagw2020.png" alt="image" width="15%" ></section>
+            <section class="right">
+              <div class="linktitle">
+                <h2>Graduation/Completion Works Exhibition 2020</h2><a href="http://industrial-art.sd.tmu.ac.jp/exhibition2020/"><img src="img/prof-link.svg"></a>
+              </div>
+              <h3>Tokyo Metropolitan University Hino Campus</h3>
+              <h3>Date : February 8, 2020|Saturday| - February 10, 2020|Monday| 11:30am-5:30pm</h3>
+              <p>This year's concept for the 11th edition of the event is "bones". As we build bones and put on flesh, we each discovered that we could build on the foundation we laid in our first and second years I have deepened my knowledge, expression and skills in my field of study. We hope that you will be able to enjoy the many works that can only be experienced at the exhibition, and that you will be able to see what each of them has to offer. I hope you can get a sense of what kind of fleshing out we've done.</p>
+            </section>
+          </section>
+          <section class="link">
+            <section class="left"><img src="img/iagw2019.png" alt="image" width="15%"></section>
+            <section class="right">
+              <div class="linktitle">
+                <h2>Graduation/Completion Works Exhibition 2019</h2><a href="http://industrial-art.sd.tmu.ac.jp/exhibition2019/"><img src="img/prof-link.svg"></a>
+              </div>
+              <h3>Tokyo Metropolitan University Hino Campus</h3>
+              <h3>Date : February 10, 2019|Sun| - February 12, 2019|Tuesday|February 12, 2019|10:00am-5:00pm</h3>
+              <p>The exhibition of the 10th year graduation work of the Department of Industrial Art, Faculty of System Design, Tokyo Metropolitan University The concept is "Return to the Origin". This culmination of our work is the result of the days we have been building up from our origins. Please keep your eyes on our origins, present and continuing future.</p>
+            </section>
+          </section>
+          <section class="link">
+            <section class="left"><img src="img/iagw2018.png" alt="image" width="15%"></section>
+            <section class="right">
+              <div class="linktitle">
+                <h2>Graduation/Completion Works Exhibition 2018</h2><a href="https://ia2018.com/"><img src="img/prof-link.svg"></a>
+              </div>
+              <h3>Tokyo Metropolitan University Hino Campus</h3>
+              <h3>Date : February 10|Saturday| - February 12|Monday|February 12|Monday| 10:00am-5:00pm, 2018</h3>
+              <p>This year's concept is "Quest". We viewed our university studies as an "exploration". The space that follows represents our path, and the light at the end of the path represents the answer to our "quest". Also, if you look around the whole thing, the letter Q, the acronym for "Quest," comes into view. We hope you'll take a look at the culmination of all the work the students have done so far in their search for unseen sights and experiences.</p>
+            </section>
+          </section>
+          <section class="link">
+            <section class="left"><img src="img/iagw2017.png" alt="image" width="15%"></section>
+            <section class="right">
+              <div class="linktitle">
+                <h2>Graduation/Completion Works Exhibition 2017</h2><a href="https://tmusdia2017.github.io/iagw2017/"><img src="img/prof-link.svg"></a>
+              </div>
+              <h3>Tokyo Metropolitan University Hino Campus</h3>
+              <h3>Period: Saturday, February 4|Saturday, February 4| - Monday, February 6| Monday, February 6| 10:00am-5:00pm, 2017</h3>
+              <p>This year's concept is "Piece". The industrial art course is one of six mediato fields and six product design fields It consists of two research fields, which are related to each other in a complex way. By combining the various pieces of knowledge and experience that have been cultivated in various forms, each student's form and It has become and will continue to expand in the future. Please take a look at the work of our students as they take a new step forward from here.</p>
+            </section>
+          </section>
+        </section>
+        <footer>
+          <section class="en">
+            <p class="ja">東京都立大学 システムデザイン学部／研究科</p>
+            <p class="sd">Faculty & Graduate School of Systems Design</p><a class="sd" href="https://www.tmu.ac.jp/">Copyright ©2018 Tokyo Metropolitan University. All rights reserved.</a>
+          </section>
+        </footer>
+      </section>
+    </main>
+
+    <script type="text/javascript">
+      console.log(location.pathname);
+      $('.sidebar li a').each(function(){
+        var href = $(this).attr('href');
+        if(location.href.match(href)) {
+          $(this).addClass('here');
+        } else {
+          $(this).removeClass('here');
+        }
+      });
+      if(location.pathname == '/page-labview.html'){
+        $('.sidebar li a').first().addClass('here');
+      }else if(location.pathname == '/'){
+        $('.sidebar li a').first().addClass('here');
+      }
+    </script>
+  </body>
+</html>
